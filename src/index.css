@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-green: #1a1a1a;
+  --color-brand-green-light: #444444;
+  --color-brand-gold: #b03030;
+  --color-brand-gold-dark: #8c1c1c;
+  --color-brand-gold-light: #e6e2d8;
+  --color-brand-vermilion: #b03030;
+  --color-brand-bg: #f9f7f2;
+}
+
+/* Base style resets and customizations */
+body {
+  background-color: var(--color-brand-bg);
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matching clean modern minimalism */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f9f7f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #b03030;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a;
+}
+
+/* Vertical text container helper */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Seamless background pattern of Clean Minimalism */
+.washi-pattern {
+  background-color: #f9f7f2;
+}
+
+/* Elegant minimalist line rules instead of heavy gold templates */
+.double-decor {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.triple-line-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.triple-line-divider::before, .triple-line-divider::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+}
+
+.traditional-border {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.traditional-border::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}

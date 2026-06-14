@@ -1,0 +1,6 @@
+{
+  "name": "Barangay Anao Information Website",
+  "description": "An elegant, serene information website for Barangay Anao, Ginatilan, Cebu, inspired by Shinto shrine website layouts with peaceful forest green and gold typography, interactive sliders, and detailed demographic records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
