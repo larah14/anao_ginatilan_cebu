@@ -28,7 +28,7 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
   ];
 
   return (
-    <section className="w-full py-20 px-6 md:px-10 bg-white border-b border-black/10" id="about-section">
+    <section className="w-full py-20 px-6 md:px-10 bg-[#fcf9e8] border-b border-[#005c12]/20" id="about-section">
       <div className="w-full max-w-7xl mx-auto">
         
         {/* Statistics highlights bar */}
@@ -38,13 +38,13 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
             return (
               <div
                 key={idx}
-                className="bg-[#f9f7f2]/50 border border-black/10 p-6 rounded-none shadow-none hover:bg-[#f9f7f2] duration-300 transition-all text-center flex flex-col items-center justify-center"
+                className="bg-white border border-[#005c12]/20 p-6 rounded-none shadow-sm hover:shadow-md hover:bg-[#edfaef]/30 duration-300 transition-all text-center flex flex-col items-center justify-center"
               >
                 <div className="w-10 h-10 rounded-sm bg-brand-gold/10 flex items-center justify-center mb-3 text-brand-gold">
                   <Icon className="w-5 h-5" />
                 </div>
-                <div className="text-[10px] font-mono tracking-[0.25em] text-[#1a1a1a]/50 uppercase" id={`stat-label-${idx}`}>{s.label}</div>
-                <div className="text-sm font-serif font-bold text-[#1a1a1a] mt-1.5" id={`stat-value-${idx}`}>{s.value}</div>
+                <div className="text-[10px] font-mono tracking-[0.25em] text-[#211600]/60 uppercase" id={`stat-label-${idx}`}>{s.label}</div>
+                <div className="text-sm font-serif font-bold text-[#211600] mt-1.5" id={`stat-value-${idx}`}>{s.value}</div>
               </div>
             );
           })}
@@ -58,65 +58,65 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
             <span className="text-brand-gold font-mono text-[10px] tracking-[0.4em] font-bold uppercase mb-2">
               HERITAGE LANDSCAPE
             </span>
-            <h2 className="text-3xl md:text-5xl font-serif text-[#1a1a1a] font-bold tracking-tight uppercase leading-none mb-4">
+            <h2 className="text-3xl md:text-5xl font-serif text-[#211600] font-bold tracking-tight uppercase leading-none mb-4">
               {t.title}
             </h2>
             <div className="w-16 h-[1px] bg-brand-gold mb-6"></div>
             
             {/* Artistic image with clean thin gray borders */}
-            <div className="border border-black/10 p-2.5 bg-[#f9f7f2] rounded-none">
+            <div className="border border-[#dba617]/30 p-2.5 bg-white shadow-sm rounded-none">
               <img
                 src={heroAnahawLeaves}
                 alt="Native Anahaw Leaves"
                 className="w-full h-48 object-cover filter brightness-95"
                 referrerPolicy="no-referrer"
               />
-              <p className="text-[10px] font-mono text-center text-[#1a1a1a]/45 mt-2.5 tracking-[0.2em] uppercase">
+              <p className="text-[10px] font-mono text-center text-[#211600]/60 mt-2.5 tracking-[0.2em] uppercase">
                 Anahaw Leaves (Saribus rotundifolius)
               </p>
             </div>
           </div>
 
           {/* History core readings */}
-          <div className="md:col-span-8 flex flex-col gap-6 font-sans text-[#1a1a1a]/80 leading-relaxed bg-[#f9f7f2]/20 p-8 md:p-12 border border-black/10 rounded-none relative">
-            <div className="absolute top-6 right-6 text-brand-gold/15">
+          <div className="md:col-span-8 flex flex-col gap-6 font-sans text-[#211600]/80 leading-relaxed bg-white p-8 md:p-12 border border-[#dba617]/25 shadow-sm rounded-none relative">
+            <div className="absolute top-6 right-6 text-brand-gold/10">
               <History className="w-16 h-16 stroke-1" />
             </div>
             
-            <h3 className="text-xl md:text-2xl font-serif text-[#1a1a1a] font-bold tracking-tight flex items-center gap-2">
+            <h3 className="text-xl md:text-2xl font-serif text-[#211600] font-bold tracking-tight flex items-center gap-2">
               <span className="w-4 h-[1px] bg-brand-gold"></span>
               {t.history}
             </h3>
 
-            <p className="text-xs md:text-sm text-[#1a1a1a]/80 font-sans leading-relaxed">
+            <p className="text-xs md:text-sm text-[#211600]/85 leading-relaxed">
               {t.historyText1}
             </p>
 
-            <p className="text-xs md:text-sm text-[#1a1a1a]/80 font-sans leading-relaxed">
+            <p className="text-xs md:text-sm text-[#211600]/85 leading-relaxed">
               {t.historyText2}
             </p>
 
             {/* Custom subtle geometric separator */}
-            <div className="w-12 h-[1px] bg-black/10 my-2 mx-auto"></div>
+            <div className="w-12 h-[1px] bg-[#005c12]/15 my-2 mx-auto"></div>
 
             {/* Vision and Mission Cards side by side */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-              <div className="border border-black/10 p-6 bg-white hover:bg-[#f9f7f2]/30 duration-300 rounded-none">
-                <h4 className="font-serif font-bold text-[#1a1a1a] flex items-center gap-2 text-sm md:text-base border-b border-black/5 pb-2.5 mb-3 uppercase tracking-wider">
+              <div className="border border-[#005c12]/15 p-6 bg-[#edfaef]/30 hover:bg-[#edfaef]/70 duration-300 rounded-none">
+                <h4 className="font-serif font-bold text-[#211600] flex items-center gap-2 text-sm md:text-base border-b border-[#005c12]/10 pb-2.5 mb-3 uppercase tracking-wider">
                   <Eye className="w-4 h-4 text-brand-gold" />
                   {t.vision}
                 </h4>
-                <p className="text-xs md:text-sm leading-relaxed text-[#1a1a1a]/70">
+                <p className="text-xs md:text-sm leading-relaxed text-[#5c5240]">
                   {t.visionText}
                 </p>
               </div>
 
-              <div className="border border-black/10 p-6 bg-white hover:bg-[#f9f7f2]/30 duration-300 rounded-none">
-                <h4 className="font-serif font-bold text-[#1a1a1a] flex items-center gap-2 text-sm md:text-base border-b border-black/5 pb-2.5 mb-3 uppercase tracking-wider">
+              <div className="border border-[#005c12]/15 p-6 bg-[#edfaef]/30 hover:bg-[#edfaef]/70 duration-300 rounded-none">
+                <h4 className="font-serif font-bold text-[#211600] flex items-center gap-2 text-sm md:text-base border-b border-[#005c12]/10 pb-2.5 mb-3 uppercase tracking-wider">
                   <Award className="w-4 h-4 text-brand-gold" />
                   {t.mission}
                 </h4>
-                <p className="text-xs md:text-sm leading-relaxed text-[#1a1a1a]/70">
+                <p className="text-xs md:text-sm leading-relaxed text-[#5c5240]">
                   {t.missionText}
                 </p>
               </div>
@@ -126,7 +126,7 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
         </div>
 
         {/* Sitio Explorer element: Dynamic dark contrast console */}
-        <div className="w-full bg-[#1a1a1a] border border-black/10 p-8 md:p-12 mb-24 relative text-[#faf7f2] rounded-none">
+        <div className="w-full bg-[#003008] border border-[#dba617]/30 p-8 md:p-12 mb-24 relative text-[#faf7f2] rounded-none">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             
             {/* Title / Description */}
@@ -160,10 +160,10 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
             </div>
 
             {/* Interactive map view - aligned style */}
-            <div className="md:col-span-7 border border-white/10 p-6 md:p-8 bg-black/30 relative min-h-[300px] flex flex-col justify-between">
+            <div className="md:col-span-7 border border-[#dba617]/30 p-6 md:p-8 bg-[#005c12]/40 relative min-h-[300px] flex flex-col justify-between">
               
               {/* Grid graphic detail overlay */}
-              <div className="absolute inset-0 bg-[#e6e2d8]/5 opacity-5 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-[#005c12]/5 opacity-5 pointer-events-none"></div>
 
               {/* Dynamic details section with animation */}
               <AnimatePresence mode="wait">
@@ -187,13 +187,13 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
                   </p>
 
                   <div className="grid grid-cols-2 gap-4 pt-4">
-                    <div className="bg-white/5 border border-white/10 p-4">
+                    <div className="bg-[#003008]/40 border border-[#dba617]/20 p-4">
                       <div className="text-[10px] font-mono tracking-widest text-brand-gold uppercase font-bold">Main Produce</div>
                       <div className="text-xs font-semibold text-white mt-1 uppercase tracking-wider font-sans">
                         {sitios[activeSitio].livelihood}
                       </div>
                     </div>
-                    <div className="bg-white/5 border border-white/10 p-4">
+                    <div className="bg-[#003008]/40 border border-[#dba617]/20 p-4">
                       <div className="text-[10px] font-mono tracking-widest text-brand-gold uppercase font-bold">Geographical Sector</div>
                       <div className="text-xs font-semibold text-white mt-1 uppercase tracking-wider font-sans">
                         {activeSitio === 0 ? "South High Ridge" : activeSitio === 1 ? "North Highland Plateau" : activeSitio === 2 ? "East Forest Valley" : "Central Plain Hub"}
@@ -217,7 +217,7 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
         <div className="w-full max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-brand-gold font-mono text-[10px] tracking-[0.4em] font-bold uppercase mb-2 block">ABOUT DETAILED RECORDS</span>
-            <h4 className="text-2xl md:text-3xl font-serif text-[#1a1a1a] font-bold tracking-tight uppercase">Frequently Asked Questions</h4>
+            <h4 className="text-2xl md:text-3xl font-serif text-[#211600] font-bold tracking-tight uppercase">Frequently Asked Questions</h4>
             <div className="w-12 h-[1px] bg-brand-gold mx-auto mt-3"></div>
           </div>
 
@@ -227,20 +227,20 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
               return (
                 <div
                   key={index}
-                  className="bg-white border border-black/10 hover:border-brand-gold transition-all duration-300 rounded-none"
+                  className="bg-white border border-[#005c12]/15 hover:border-brand-gold transition-all duration-300 rounded-none shadow-sm"
                 >
                   <button
                     onClick={() => setOpenFaqIndex(isOpen ? null : index)}
                     className="w-full px-6 py-4.5 flex justify-between items-center text-left"
                   >
-                    <span className="font-serif font-bold text-sm md:text-base text-[#1a1a1a] flex items-center gap-3.5">
+                    <span className="font-serif font-bold text-sm md:text-base text-[#211600] flex items-center gap-3.5">
                       <HelpCircle className="w-4.5 h-4.5 text-brand-gold shrink-0" />
                       {item.question}
                     </span>
                     {isOpen ? (
                       <ChevronUp className="w-4 h-4 text-brand-gold" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 text-[#1a1a1a]/60" />
+                      <ChevronDown className="w-4 h-4 text-[#211600]/40" />
                     )}
                   </button>
 
@@ -253,7 +253,7 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
                         transition={{ duration: 0.25 }}
                         className="overflow-hidden"
                       >
-                        <div className="px-6 pb-5 pt-1.5 font-sans text-xs md:text-sm text-[#1a1a1a]/80 border-t border-black/5 leading-relaxed bg-[#f9f7f2]/30">
+                        <div className="px-6 pb-5 pt-1.5 font-sans text-xs md:text-sm text-[#5c5240] border-t border-[#005c12]/10 leading-relaxed bg-[#edfaef]/30">
                           {item.answer}
                         </div>
                       </motion.div>

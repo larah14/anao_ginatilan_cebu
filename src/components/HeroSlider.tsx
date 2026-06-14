@@ -58,7 +58,7 @@ export default function HeroSlider({ currentLang }: HeroSliderProps) {
   };
 
   return (
-    <div className="w-full relative h-[450px] md:h-[600px] border-b border-black/10 bg-[#e6e2d8] overflow-hidden" id="hero-slider">
+    <div className="w-full relative h-[450px] md:h-[600px] border-b border-[#dba617]/20 bg-[#003008] overflow-hidden" id="hero-slider">
       {/* Background Slides */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -73,17 +73,17 @@ export default function HeroSlider({ currentLang }: HeroSliderProps) {
           <img
             src={slides[currentIndex].image}
             alt={slides[currentIndex].heading}
-            className="w-full h-full object-cover opacity-80 object-center mix-blend-normal"
+            className="w-full h-full object-cover opacity-70 object-center mix-blend-normal"
             referrerPolicy="no-referrer"
           />
-          {/* Subtle clean darkening gradient overlay */}
-          <div className="absolute inset-0 bg-black/35"></div>
+          {/* Subtle clean darkening gradient overlay with welcoming warm mists */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#003008]/85 via-[#003008]/40 to-black/25"></div>
         </motion.div>
       </AnimatePresence>
 
       {/* Floating Minimalist Content Banner Panel (aligned left, sleek asymmetrical structure) */}
       <div className="absolute inset-y-0 left-0 w-full max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-start pointer-events-none z-10">
-        <div className="w-full max-w-xl bg-white/95 p-8 md:p-12 border border-black/10 relative shadow-none pointer-events-auto rounded-none">
+        <div className="w-full max-w-xl bg-[#fcf9e8]/95 backdrop-blur-md p-8 md:p-12 border border-[#dba617]/40 relative shadow-lg pointer-events-auto rounded-none">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -95,13 +95,13 @@ export default function HeroSlider({ currentLang }: HeroSliderProps) {
             >
               {/* Badge */}
               <div className="flex items-center gap-2">
-                <span className="text-[10px] font-mono tracking-[0.35em] text-brand-gold font-bold uppercase">
+                <span className="text-[10px] font-mono tracking-[0.35em] text-[#dba617] font-bold uppercase">
                   {slides[currentIndex].tag}
                 </span>
               </div>
               
               {/* Title */}
-              <h1 className="text-3xl md:text-5xl font-serif font-light text-[#1a1a1a] tracking-tight leading-tight">
+              <h1 className="text-3xl md:text-5xl font-serif font-light text-[#211600] tracking-tight leading-tight">
                 {currentIndex === 0 ? (
                   <span>The Land of <br/><span className="font-bold text-brand-gold">Anahaw Palms</span></span>
                 ) : (
@@ -113,7 +113,7 @@ export default function HeroSlider({ currentLang }: HeroSliderProps) {
               <div className="w-12 h-[1px] bg-brand-gold my-1"></div>
               
               {/* Description */}
-              <p className="text-xs md:text-sm text-[#1a1a1a]/80 font-sans leading-relaxed">
+              <p className="text-xs md:text-sm text-[#211600]/85 font-sans leading-relaxed">
                 {slides[currentIndex].sub}
               </p>
             </motion.div>
@@ -125,14 +125,14 @@ export default function HeroSlider({ currentLang }: HeroSliderProps) {
       <div className="absolute bottom-8 right-8 flex gap-2 z-20">
         <button
           onClick={handlePrev}
-          className="w-11 h-11 border border-black/15 bg-white hover:bg-brand-gold hover:text-white hover:border-transparent flex items-center justify-center transition-all duration-300 rounded-none text-[#1a1a1a]"
+          className="w-11 h-11 border border-[#dba617]/30 bg-[#fcf9e8] hover:bg-[#dba617] hover:text-white hover:border-transparent flex items-center justify-center transition-all duration-300 rounded-none text-[#211600]"
           aria-label="Previous Slide"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={handleNext}
-          className="w-11 h-11 border border-black/15 bg-white hover:bg-brand-gold hover:text-white hover:border-transparent flex items-center justify-center transition-all duration-300 rounded-none text-[#1a1a1a]"
+          className="w-11 h-11 border border-[#dba617]/30 bg-[#fcf9e8] hover:bg-[#dba617] hover:text-white hover:border-transparent flex items-center justify-center transition-all duration-300 rounded-none text-[#211600]"
           aria-label="Next Slide"
         >
           <ChevronRight className="w-5 h-5" />

@@ -6,19 +6,25 @@
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-brand-green: #1a1a1a;
-  --color-brand-green-light: #444444;
-  --color-brand-gold: #b03030;
-  --color-brand-gold-dark: #8c1c1c;
-  --color-brand-gold-light: #e6e2d8;
-  --color-brand-vermilion: #b03030;
-  --color-brand-bg: #f9f7f2;
+  --color-brand-green: #003008;
+  --color-brand-green-secondary: #005c12;
+  --color-brand-green-light-bg: #edfaef;
+  --color-brand-cream-bg: #fcf9e8;
+  --color-brand-gold: #dba617;
+  --color-brand-gold-light: #f0c33c;
+  --color-brand-dark-text: #211600;
+
+  --color-brand-bg: #fcf9e8;
+  --color-brand-card: #ffffff;
+  --color-brand-text-primary: #211600;
+  --color-brand-text-secondary: #5c5240;
+  --color-brand-border: rgba(0, 92, 18, 0.15);
 }
 
 /* Base style resets and customizations */
 body {
   background-color: var(--color-brand-bg);
-  color: #1a1a1a;
+  color: var(--color-brand-text-primary);
   font-family: var(--font-sans);
   overflow-x: hidden;
 }
@@ -28,14 +34,14 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #f9f7f2;
+  background: var(--color-brand-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #b03030;
+  background: var(--color-brand-gold);
   border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1a1a1a;
+  background: var(--color-brand-green-light);
 }
 
 /* Vertical text container helper */
@@ -46,12 +52,12 @@ body {
 
 /* Seamless background pattern of Clean Minimalism */
 .washi-pattern {
-  background-color: #f9f7f2;
+  background-color: var(--color-brand-bg);
 }
 
 /* Elegant minimalist line rules instead of heavy gold templates */
 .double-decor {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .triple-line-divider {
@@ -64,11 +70,11 @@ body {
   content: '';
   flex-grow: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
 }
 
 .traditional-border {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-brand-border);
   position: relative;
 }
 .traditional-border::before {
@@ -78,6 +84,6 @@ body {
   left: 3px;
   right: 3px;
   bottom: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(201, 162, 39, 0.15);
   pointer-events: none;
 }

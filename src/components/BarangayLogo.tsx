@@ -43,15 +43,15 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
       </defs>
 
       {/* Text: BARANGAY ANAO */}
-      <text font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="8.5" fill="#1a1a1a" letter-spacing="1">
-        <textPath href="#barangay-text-path" startOffset="50%" text-anchor="middle">
+      <text fontFamily="system-ui, -apple-system, sans-serif" fontWeight="900" fontSize="8.5" fill="#1a1a1a" letterSpacing="1">
+        <textPath href="#barangay-text-path" startOffset="50%" textAnchor="middle">
           BARANGAY ANAO
         </textPath>
       </text>
 
       {/* Text: GINATILAN, CEBU */}
-      <text font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="7.5" fill="#1a1a1a" letter-spacing="0.75">
-        <textPath href="#cebu-text-path" startOffset="50%" text-anchor="middle">
+      <text fontFamily="system-ui, -apple-system, sans-serif" fontWeight="900" fontSize="7.5" fill="#1a1a1a" letterSpacing="0.75">
+        <textPath href="#cebu-text-path" startOffset="50%" textAnchor="middle">
           GINATILAN, CEBU
         </textPath>
       </text>
@@ -64,7 +64,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
       <circle cx="50" cy="50" r="35" fill="#0e8334" stroke="#1a1a1a" strokeWidth="1.25" />
 
       {/* Inner gold circular accent line */}
-      <circle cx="50" cy="50" r="34" fill="none" stroke="#ffd014" strokeWidth="0.5" stroke-opacity="0.3" />
+      <circle cx="50" cy="50" r="34" fill="none" stroke="#ffd014" strokeWidth="0.5" strokeOpacity="0.3" />
 
       {/* Anahaw Palm Tree representation */}
       <g id="anahaw-tree">
@@ -98,7 +98,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 1 Ribs */}
-        <path d="M 50 56 L 41 38 M 50 56 L 45 34 M 50 56 L 49 33" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 41 38 M 50 56 L 45 34 M 50 56 L 49 33" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 2: Top Center-Right */}
         <path
@@ -108,7 +108,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 2 Ribs */}
-        <path d="M 50 56 L 59 38 M 50 56 L 55 34 M 50 56 L 51 33" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 59 38 M 50 56 L 55 34 M 50 56 L 51 33" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 3: Far Left (pointing horizontal-down) */}
         <path
@@ -118,7 +118,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 3 Ribs */}
-        <path d="M 50 56 L 31 51 M 50 56 L 31 55 M 50 56 L 34 58" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 31 51 M 50 56 L 31 55 M 50 56 L 34 58" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 4: Far Right (pointing horizontal-down) */}
         <path
@@ -128,7 +128,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 4 Ribs */}
-        <path d="M 50 56 L 69 51 M 50 56 L 69 55 M 50 56 L 66 58" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 69 51 M 50 56 L 69 55 M 50 56 L 66 58" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 5: Mid Upper-Left */}
         <path
@@ -138,7 +138,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 5 Ribs */}
-        <path d="M 50 56 L 33 34 M 50 56 L 37 30 M 50 56 L 41 28" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 33 34 M 50 56 L 37 30 M 50 56 L 41 28" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 6: Mid Upper-Right */}
         <path
@@ -148,7 +148,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 6 Ribs */}
-        <path d="M 50 56 L 67 34 M 50 56 L 63 30 M 50 56 L 59 28" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 67 34 M 50 56 L 63 30 M 50 56 L 59 28" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 7: Horizontal Left-Up */}
         <path
@@ -158,7 +158,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 7 Ribs */}
-        <path d="M 50 56 L 27 41 M 50 56 L 30 43 M 50 56 L 33 46" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 27 41 M 50 56 L 30 43 M 50 56 L 33 46" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Leaf 8: Horizontal Right-Up */}
         <path
@@ -168,7 +168,7 @@ export default function BarangayLogo({ className = '', size = '48' }: BarangayLo
           strokeWidth="0.5"
         />
         {/* Leaf 8 Ribs */}
-        <path d="M 50 56 L 73 41 M 50 56 L 70 43 M 50 56 L 67 46" stroke="#0e8334" strokeWidth="0.5" stroke-opacity="0.7" />
+        <path d="M 50 56 L 73 41 M 50 56 L 70 43 M 50 56 L 67 46" stroke="#0e8334" strokeWidth="0.5" strokeOpacity="0.7" />
 
         {/* Small golden central core crown of palm */}
         <circle cx="50" cy="56" r="3" fill="#ffd014" stroke="#1a1a1a" strokeWidth="0.5" />

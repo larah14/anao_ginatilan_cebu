@@ -21,7 +21,7 @@ export default function Footer({ currentLang, onSectionClick }: FooterProps) {
   };
 
   return (
-    <footer className="w-full bg-[#1a1a1a] text-white relative border-t border-white/5 overflow-hidden">
+    <footer className="w-full bg-[#003008] text-white relative border-t border-[#dba617]/30 overflow-hidden">
       
       {/* Background elegant line details */}
       <div className="absolute inset-0 bg-white/[0.01] pointer-events-none"></div>
@@ -30,11 +30,11 @@ export default function Footer({ currentLang, onSectionClick }: FooterProps) {
       <div className="flex justify-center -mt-px w-full text-center relative z-10">
         <button
           onClick={handleScrollToTop}
-          className="border-b border-x border-white/10 bg-[#faf7f2] px-6 py-4 text-[#1a1a1a] hover:text-white hover:bg-brand-gold duration-300 transition-all font-mono font-bold text-xs tracking-[0.25em] flex flex-col items-center gap-1.5 uppercase shadow-none rounded-none group"
+          className="border-b border-x border-[#dba617]/30 bg-[#005c12] px-6 py-4 text-[#E5E7EB] hover:text-white hover:bg-brand-gold duration-300 transition-all font-mono font-bold text-xs tracking-[0.25em] flex flex-col items-center gap-1.5 uppercase shadow-none rounded-none group"
           aria-label={t.backToTop}
         >
           <span>{t.backToTop}</span>
-          <CornerUpLeft className="w-4 h-4 text-[#1a1a1a]/50 group-hover:text-white transition-colors" />
+          <CornerUpLeft className="w-4 h-4 text-[#E5E7EB]/50 group-hover:text-white transition-colors" />
         </button>
       </div>
 
@@ -49,7 +49,7 @@ export default function Footer({ currentLang, onSectionClick }: FooterProps) {
               {/* Official Seal of Barangay Anao */}
               <BarangayLogo size={44} className="opacity-90" />
               <div className="flex flex-col text-left">
-                <span className="text-[8px] font-mono text-brand-gold font-bold tracking-[0.25em] uppercase leading-none">
+                <span className="text-[8px] font-mono text-[#f0c33c] font-bold tracking-[0.25em] uppercase leading-none">
                   {t.subtitle}
                 </span>
                 <span className="text-xl font-serif text-white font-bold tracking-tight uppercase mt-1.5 leading-none">
@@ -67,7 +67,7 @@ export default function Footer({ currentLang, onSectionClick }: FooterProps) {
 
           {/* Footer menu columns */}
           <div className="md:col-span-4 flex flex-col gap-3">
-            <div className="text-[10px] font-mono tracking-[0.3em] text-brand-gold uppercase font-bold text-center md:text-left mb-2 pb-2 border-b border-white/5">
+            <div className="text-[10px] font-mono tracking-[0.3em] text-[#f0c33c] uppercase font-bold text-center md:text-left mb-2 pb-2 border-b border-white/10">
               QUICK SECTIONS
             </div>
             <div className="grid grid-cols-2 gap-y-2.5 gap-x-4 text-xs font-serif font-bold text-center md:text-left">
@@ -91,25 +91,25 @@ export default function Footer({ currentLang, onSectionClick }: FooterProps) {
 
           {/* Security stamp or regulatory accreditation details */}
           <div className="md:col-span-3 flex flex-col items-center md:items-start gap-4">
-            <div className="text-[10px] font-mono tracking-[0.3em] text-brand-gold uppercase font-bold mb-2 pb-2 border-b border-white/5 w-full text-center md:text-left">
+            <div className="text-[10px] font-mono tracking-[0.3em] text-[#f0c33c] uppercase font-bold mb-2 pb-2 border-b border-white/10 w-full text-center md:text-left">
               HERITAGE STANDARD
             </div>
             <div className="flex gap-3 items-center">
-              <div className="w-8 h-8 rounded-none bg-white/5 border border-white/10 flex items-center justify-center text-brand-gold">
+              <div className="w-8 h-8 rounded-none bg-[#005c12]/40 border border-[#dba617]/20 flex items-center justify-center text-[#f0c33c]">
                 <Shield className="w-4 h-4" />
               </div>
               <div className="text-left text-[10px] text-white/60 leading-tight font-sans">
-                <span className="font-bold text-brand-gold block uppercase">DATA PROTECTION</span>
+                <span className="font-bold text-[#f0c33c] block uppercase">DATA PROTECTION</span>
                 <span>Gov Secure Certified v2.5</span>
               </div>
             </div>
 
             <div className="flex gap-3 items-center">
-              <div className="w-8 h-8 rounded-none bg-white/5 border border-white/10 flex items-center justify-center text-brand-gold">
+              <div className="w-8 h-8 rounded-none bg-[#005c12]/40 border border-[#dba617]/20 flex items-center justify-center text-[#f0c33c]">
                 <Sparkles className="w-4 h-4" />
               </div>
               <div className="text-left text-[10px] text-white/60 leading-tight font-sans">
-                <span className="font-bold text-brand-gold block uppercase">CULTURAL INVENTORY</span>
+                <span className="font-bold text-[#f0c33c] block uppercase">CULTURAL INVENTORY</span>
                 <span>Ginatilan Tourism Board</span>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Footer({ currentLang, onSectionClick }: FooterProps) {
         </div>
 
         {/* Outer bottom copyright strip */}
-        <div className="border-t border-white/5 pt-8 text-center text-[10px] font-mono text-white/30 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/10 pt-8 text-center text-[10px] font-mono text-white/30 flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             &copy; {new Date().getFullYear()} {t.allRightsReserved}
           </div>

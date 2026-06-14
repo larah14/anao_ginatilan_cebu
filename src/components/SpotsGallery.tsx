@@ -32,7 +32,7 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
   };
 
   return (
-    <section className="w-full py-20 px-6 md:px-10 bg-white border-b border-black/10" id="tourist-spots">
+    <section className="w-full py-20 px-6 md:px-10 bg-[#fcf9e8] border-b border-[#005c12]/20" id="tourist-spots">
       <div className="w-full max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -41,10 +41,10 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
             <Compass className="w-4 h-4" />
             <span>HERITAGE SIGHTS</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-serif text-[#1a1a1a] font-bold tracking-tight uppercase mt-3">
+          <h2 className="text-3xl md:text-5xl font-serif text-[#211600] font-bold tracking-tight uppercase mt-3">
             {t.spotsHeader}
           </h2>
-          <p className="text-xs text-[#1a1a1a]/60 font-sans max-w-xl mx-auto mt-3 leading-relaxed">
+          <p className="text-xs text-[#5c5240] font-sans max-w-xl mx-auto mt-3 leading-relaxed">
             {t.spotsSub}
           </p>
           <div className="w-16 h-[1px] bg-brand-gold mt-4"></div>
@@ -55,10 +55,10 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
           {touristSpots.map((spot, idx) => (
             <div
               key={spot.name}
-              className="bg-white border border-black/10 hover:border-brand-gold transition-all duration-300 relative group rounded-none"
+              className="bg-white border border-[#005c12]/15 hover:border-brand-gold hover:shadow-lg transition-all duration-300 relative group rounded-none"
             >
               {/* Picture Frame */}
-              <div className="relative overflow-hidden aspect-[4/3] border-b border-black/10">
+              <div className="relative overflow-hidden aspect-[4/3] border-b border-[#005c12]/15">
                 <img
                   src={spot.image}
                   alt={spot.name}
@@ -70,7 +70,7 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
                 {/* Click Zoom overlay widget */}
                 <button
                   onClick={() => setLightboxIndex(idx)}
-                  className="absolute bottom-3 right-3 p-2 bg-white text-brand-gold hover:bg-brand-gold hover:text-white rounded-none border border-black/10 transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-none z-10"
+                  className="absolute bottom-3 right-3 p-2 bg-[#003008] text-brand-gold hover:bg-brand-gold hover:text-white rounded-none border border-[#dba617]/20 transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-none z-10"
                   aria-label={`View larger image of ${spot.name}`}
                 >
                   <ZoomIn className="w-4 h-4" />
@@ -81,26 +81,26 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
               <div className="p-5 space-y-3">
                 <div className="flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-                  <span className="text-[9px] font-mono tracking-[0.2em] font-bold text-[#1a1a1a]/50 uppercase">
+                  <span className="text-[9px] font-mono tracking-[0.2em] font-bold text-[#dba617] uppercase">
                     {spot.highlight}
                   </span>
                 </div>
 
-                <h3 className="font-serif font-bold text-base text-[#1a1a1a] line-clamp-1 group-hover:text-brand-gold transition-colors uppercase tracking-wide">
+                <h3 className="font-serif font-bold text-base text-[#211600] line-clamp-1 group-hover:text-brand-gold transition-colors uppercase tracking-wide">
                   {spot.name}
                 </h3>
 
-                <p className="text-xs text-[#1a1a1a]/70 font-sans leading-relaxed line-clamp-3">
+                <p className="text-xs text-[#5c5240] font-sans leading-relaxed line-clamp-3">
                   {spot.description}
                 </p>
               </div>
 
               {/* Bottom tag bar */}
-              <div className="border-t border-black/5 px-5 py-3.5 flex justify-between items-center bg-[#f9f7f2]/20">
-                <span className="text-[9px] font-mono text-[#1a1a1a]/40 font-semibold tracking-wider">SPOT_0{idx + 1}</span>
+              <div className="border-t border-[#005c12]/10 px-5 py-3.5 flex justify-between items-center bg-[#edfaef]/30">
+                <span className="text-[9px] font-mono text-[#211600]/40 font-semibold tracking-wider">SPOT_0{idx + 1}</span>
                 <button
                   onClick={() => setLightboxIndex(idx)}
-                  className="text-[10px] font-mono font-bold text-brand-gold hover:text-[#1a1a1a] transition-colors uppercase tracking-[0.25em] flex items-center gap-1"
+                  className="text-[10px] font-mono font-bold text-brand-gold hover:text-[#005c12] transition-colors uppercase tracking-[0.25em] flex items-center gap-1"
                 >
                   <span>SUHIRA</span>
                 </button>
@@ -115,7 +115,7 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
       <AnimatePresence>
         {lightboxIndex !== null && (
           <div
-            className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex flex-col items-center justify-center p-4 bg-opacity-95"
+            className="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex flex-col items-center justify-center p-4 bg-opacity-95"
             onClick={() => setLightboxIndex(null)}
           >
             {/* Close buttons */}
@@ -145,7 +145,7 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.25 }}
-                className="bg-white p-3 md:p-4 border border-white/10 pointer-events-auto rounded-none shadow-none relative w-full h-[350px] md:h-[600px]"
+                className="bg-[#003008] p-3 md:p-4 border border-white/10 pointer-events-auto rounded-none shadow-none relative w-full h-[350px] md:h-[600px]"
                 onClick={(e) => e.stopPropagation()}
               >
                 <img
@@ -156,14 +156,14 @@ export default function SpotsGallery({ currentLang }: SpotsGalleryProps) {
                 />
                 
                 {/* Traditional overlay detail card inside slider lightbox */}
-                <div className="absolute bottom-6 left-6 right-6 md:right-auto bg-white/95 backdrop-blur-sm p-5 md:p-6 border border-black/10 rounded-none max-w-md shadow-none">
+                <div className="absolute bottom-6 left-6 right-6 md:right-auto bg-[#003008]/95 backdrop-blur-md p-5 md:p-6 border border-[#dba617]/30 rounded-none max-w-md shadow-none">
                   <div className="text-[10px] font-mono text-brand-gold font-bold tracking-[0.25em] uppercase mb-1.5">
                     {touristSpots[lightboxIndex].highlight}
                   </div>
-                  <h4 className="font-serif font-bold text-lg md:text-xl text-[#1a1a1a] uppercase leading-none mb-2">
+                  <h4 className="font-serif font-bold text-lg md:text-xl text-white uppercase leading-none mb-2">
                     {touristSpots[lightboxIndex].name}
                   </h4>
-                  <p className="text-xs text-[#1a1a1a]/70 font-sans leading-relaxed">
+                  <p className="text-xs text-white/85 font-sans leading-relaxed">
                     {touristSpots[lightboxIndex].description}
                   </p>
                 </div>

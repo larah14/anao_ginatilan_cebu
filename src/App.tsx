@@ -75,7 +75,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-between selection:bg-brand-gold/20 selection:text-black">
+    <div className="min-h-screen bg-brand-bg text-brand-text-primary flex flex-col justify-between selection:bg-brand-gold/20 selection:text-white">
       
       {/* 1. Header Navigation block with custom logo & dropdown lang switcher */}
       <Header
