@@ -9,6 +9,8 @@ import { Eye, Award, Landmark, HelpCircle, MapPin, Compass, ChevronDown, Chevron
 import { Language } from '../types';
 import { translations, sitios, faqItems } from '../data';
 
+import heroAnahawLeaves from '../assets/images/hero_anahaw_leaves_1781397600337.jpg';
+
 interface AboutSectionProps {
   currentLang: Language;
 }
@@ -64,7 +66,7 @@ export default function AboutSection({ currentLang }: AboutSectionProps) {
             {/* Artistic image with clean thin gray borders */}
             <div className="border border-black/10 p-2.5 bg-[#f9f7f2] rounded-none">
               <img
-                src="/src/assets/images/hero_anahaw_leaves_1781397600337.jpg"
+                src={heroAnahawLeaves}
                 alt="Native Anahaw Leaves"
                 className="w-full h-48 object-cover filter brightness-95"
                 referrerPolicy="no-referrer"

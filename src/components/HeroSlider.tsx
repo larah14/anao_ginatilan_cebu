@@ -9,6 +9,10 @@ import { ChevronLeft, ChevronRight, Info } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data';
 
+import heroAnaoUplands from '../assets/images/hero_anao_uplands_1781397585846.jpg';
+import heroAnahawLeaves from '../assets/images/hero_anahaw_leaves_1781397600337.jpg';
+import heroFarmingTerrace from '../assets/images/hero_farming_terrace_1781397614002.jpg';
+
 interface HeroSliderProps {
   currentLang: Language;
 }
@@ -19,19 +23,19 @@ export default function HeroSlider({ currentLang }: HeroSliderProps) {
 
   const slides = [
     {
-      image: "/src/assets/images/hero_anao_uplands_1781397585846.jpg",
+      image: heroAnaoUplands,
       heading: t.heroHeading1,
       sub: t.heroSub1,
       tag: currentLang === 'en' ? "Serene Uplands" : "Malinawong Kabukiran"
     },
     {
-      image: "/src/assets/images/hero_anahaw_leaves_1781397600337.jpg",
+      image: heroAnahawLeaves,
       heading: t.heroHeading2,
       sub: t.heroSub2,
       tag: currentLang === 'en' ? "Anahaw Flora" : "Dahon sa Anahaw"
     },
     {
-      image: "/src/assets/images/hero_farming_terrace_1781397614002.jpg",
+      image: heroFarmingTerrace,
       heading: t.heroHeading3,
       sub: t.heroSub3,
       tag: currentLang === 'en' ? "Bounteous Harvest" : "Mabungahong Abot"

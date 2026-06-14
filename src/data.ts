@@ -6,6 +6,11 @@
 import { Info, MapPin, Users, HeartHandshake, Eye, Award, Flower, History as HistoryIcon } from 'lucide-react';
 import { Official, Sitio, TouristSpot, NewsTopic, FAQItem } from './types';
 
+import heroFarmingTerrace from './assets/images/hero_farming_terrace_1781397614002.jpg';
+import heroAnahawLeaves from './assets/images/hero_anahaw_leaves_1781397600337.jpg';
+import spotWaterSpring from './assets/images/spot_water_spring_1781397629855.jpg';
+import spotAnahawCraft from './assets/images/spot_anahaw_craft_1781397645875.jpg';
+
 export const officials: Official[] = [
   {
     name: "Hon. Maria J. Cabañog",
@@ -90,25 +95,25 @@ export const sitios: Sitio[] = [
 export const touristSpots: TouristSpot[] = [
   {
     name: "Balani Highland Terraces",
-    image: "/src/assets/images/hero_farming_terrace_1781397614002.jpg",
+    image: heroFarmingTerrace,
     description: "Breathtaking highland agricultural terraces on mountain ridges where locals craft sustainable vertical farming setups.",
     highlight: "Panoramic Highland Views"
   },
   {
     name: "Anahaw Rich Forest Paths",
-    image: "/src/assets/images/hero_anahaw_leaves_1781397600337.jpg",
+    image: heroAnahawLeaves,
     description: "Natural forests rich with native Anahaw palm leaves (the national leaf of the Philippines) which gave Barangay Anao its historic name.",
     highlight: "Protected Native Biodiversity"
   },
   {
     name: "Anao Natural springs",
-    image: "/src/assets/images/spot_water_spring_1781397629855.jpg",
+    image: spotWaterSpring,
     description: "Hidden under thick forest foliage, these sweet-water springs supply fresh, icy mountain waters to adjacent farmland settlements.",
     highlight: "Untouched Freshwater Sanctuary"
   },
   {
     name: "Traditional Leaf Handcrafts",
-    image: "/src/assets/images/spot_anahaw_craft_1781397645875.jpg",
+    image: spotAnahawCraft,
     description: "A community center showcasing local artisans transforming sun-dried Anahaw leaves into woven 'paypay' fans, storage baskets, and rustic roofing sheets.",
     highlight: "Indigenous Weaving Legacy"
   }

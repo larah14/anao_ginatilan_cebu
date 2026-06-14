@@ -7,6 +7,8 @@ import { Shield, Award, Users, FileText, Landmark, User, Sparkles } from 'lucide
 import { Language } from '../types';
 import { translations, officials } from '../data';
 
+import pbPortrait from '../assets/images/punong_barangay_portrait_1781399281641.jpg';
+
 interface AdminSectionProps {
   currentLang: Language;
 }
@@ -52,7 +54,7 @@ export default function AdminSection({ currentLang }: AdminSectionProps) {
             <div className="w-32 h-32 rounded-none border border-black/10 shrink-0 bg-[#f9f7f2] flex items-center justify-center p-1 relative">
               <div className="w-full h-full bg-[#1a1a1a] flex items-center justify-center text-white overflow-hidden">
                 <img
-                  src="/src/assets/images/punong_barangay_portrait_1781399281641.jpg"
+                  src={pbPortrait}
                   alt={mainLeader.name}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
