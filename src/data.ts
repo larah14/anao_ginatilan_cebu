@@ -6,10 +6,10 @@
 import { Info, MapPin, Users, HeartHandshake, Eye, Award, Flower, History as HistoryIcon } from 'lucide-react';
 import { Official, Sitio, TouristSpot, NewsTopic, FAQItem } from './types';
 
-import heroFarmingTerrace from './assets/images/hero_farming_terrace_1781397614002.jpg';
-import heroAnahawLeaves from './assets/images/hero_anahaw_leaves_1781397600337.jpg';
-import spotWaterSpring from './assets/images/spot_water_spring_1781397629855.jpg';
-import spotAnahawCraft from './assets/images/spot_anahaw_craft_1781397645875.jpg';
+const heroFarmingTerrace = new URL('./assets/images/hero_farming_terrace_1781397614002.jpg', import.meta.url).href;
+const heroAnahawLeaves = new URL('./assets/images/hero_anahaw_leaves_1781397600337.jpg', import.meta.url).href;
+const spotWaterSpring = new URL('./assets/images/spot_water_spring_1781397629855.jpg', import.meta.url).href;
+const spotAnahawCraft = new URL('./assets/images/spot_anahaw_craft_1781397645875.jpg', import.meta.url).href;
 
 export const officials: Official[] = [
   {
